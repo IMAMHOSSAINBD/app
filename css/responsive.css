@@ -1,0 +1,149 @@
+
+@media (max-width: 1136px) {
+    .exampleClass {
+		
+	}
+}
+
+@media (max-width: 992px) {
+    .clientReview .floatImg img:nth-child(6) {
+        left: 100px;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .maintitle {
+        font-size: 30px;
+    }
+    .heroSection .heroToptxt {
+        padding-top: 2rem;
+    }
+    .mr-10 {
+        margin-right: 0;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .smart .item-1, .smart .item-2, .smart .item-3 {
+        padding: .5rem;
+    }
+    .whyUsBtm .row .p-5 {
+        padding : .5rem!important;
+    }
+    .ultimate .container .ultimateTop {
+        text-align: center;
+    }
+    .pricingList .pricing-Top {
+        padding: 0 1rem;
+    }
+    .pricingList .pricing-list {
+        width: 100%;
+    }
+    .clientReview .floatImg img:nth-child(1) {
+        left: 150px;
+    }
+    .clientReview .floatImg img:nth-child(5) {
+        left: 10px;
+    }
+    .clientReview .floatImg img:nth-child(7){
+        left: 100px;
+    }
+}
+
+@media (max-width: 767.99px) {
+    .section{
+        padding: 1rem 0;
+    }
+    .heroSection {
+        text-align: center;
+    }
+    .text-left {
+        text-align: center;
+    }
+    .itemImg img {
+    padding: 1rem;
+    border-radius: 100%;
+    text-align: center;
+    width: 20%;
+}
+    .features-div {
+        text-align: center;
+    }
+    .itemDes {
+        padding: .5rem 3rem;
+    }
+    .smart .smart-top .title {
+        padding: .5rem;
+    }
+    .smart .smart-top .subtitle {
+        padding: .5rem;
+    }
+    .smart .smart-top .col-md-6:last-child p {
+        border: none;
+    }
+    .design {
+        text-align: center;
+    }
+    .ultimateInner {
+        text-align: center;
+    }
+    .imgoverlay {
+        margin-bottom: 4rem;
+    }
+    
+
+    .clientReview, .App {
+        text-align: center;
+    }
+
+    .App .col-md-6.col-12:first-child div:last-child {
+        display: flex!important;
+        justify-content: space-around;
+    }
+    footer .Fnav ul li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .div-img {
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link:Hover::after {
+        width: 0;
+    }
+    .navbar-collapse.collapse.show {
+        text-align: center;
+    }
+    
+
+}
+
+@media (max-width: 767px) {
+    .clientReview .floatImg {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .exampleClass {
+		
+	}
+}
+
+@media (max-width: 414px) {
+    .exampleClass {
+		
+	}
+}
+
+@media (max-width: 375px) {
+    .exampleClass {
+		
+	}
+}
+
+@media (max-width: 320px) {
+    .exampleClass {
+		
+	}
+}
