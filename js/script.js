@@ -19,8 +19,8 @@ $('.companycarousel').owlCarousel({
 })
 
 
-const nextIcon = '<img src="../img/right-indicate.png">';
-const prevIcon = '<img src="../img/left-indicate.png">';
+const nextIcon = '<img src="./img/right-indicate.png">';
+const prevIcon = '<img src="./img/left-indicate.png">';
 
 $('.testiCarousel').owlCarousel({
     loop:true,
@@ -86,3 +86,41 @@ $(document).ready(function() {
       }
     });
   });
+
+
+  var btn = $('#BackTobutton');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+//Play Button 
+
+$(document).ready(function(){
+  $('.fancybox').fancybox({
+    padding: 0,
+    maxHeight: 444,
+    afterLoad: function() {
+      $('<div>')
+        .attr('class', 'prefooter-btn')
+        .data('ct-checkout', 'vidalife.kiba-camera')
+        .text('Pre-Order Now')
+        .appendTo(this.wrap[0]);
+    }    
+  });
+  
+});
+
+
+
+

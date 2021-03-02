@@ -4,6 +4,7 @@
 
 body{
 	font-family: 'Poppins', sans-serif;
+	position: relative;
 	
 }
 html {
@@ -109,6 +110,43 @@ a {
 	width: 80%;
 }
 
+#BackTobutton {
+	display: inline-block;
+	background-color: var(--colorTwo);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+  }
+  #BackTobutton i {
+	
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: var(--colorSix);
+  }
+  #BackTobutton:hover {
+	cursor: pointer;
+	background-color: var(--colorThree);
+	color: var(--colorTwo);
+  }
+  #BackTobutton:active {
+	background-color: #555;
+  }
+  #BackTobutton.show {
+	opacity: 1;
+	visibility: visible;
+  }
+
 /* ********************************************************** */
 					/*  INDEX PAGE */
 /* ********************************************************** */
@@ -198,6 +236,9 @@ a {
 header .navbar-nav {
 	margin-left: auto;
 }
+
+/*scrollspy css */
+
 
 .navbar-light .navbar-nav .nav-link {
 	transition: 2s all ease;

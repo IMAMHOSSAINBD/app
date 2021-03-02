@@ -12,11 +12,14 @@
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 
 
-        <!-- Fontawesome and normalize FILES -->
-        <!-- <link rel="stylesheet" href="css/fontawesome-all.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
         <link rel="stylesheet" href="css/normalize.css"> <!-- Show the website perfectly to all browser -->
 
+                <!-- Fontawesome and normalize FILES -->
+        <!-- <link rel="stylesheet" href="css/fontawesome-all.css"> -->
+        <link rel="stylesheet" href="css/fontawesome.all.min.css">
+        
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> -->
         <!-- Owl Carousel File -->
         <link rel="stylesheet" href="plugins/owl.theme.default.min.css">
         <link rel="stylesheet" href="plugins/owl.carousel.min.css">
@@ -27,6 +30,12 @@
 
         <!-- Modernizr for Flip Pricing table -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+        <!-- Animate css for wow -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!--FancyBox for Video Popup  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
         
         <!-- Main CSS and Responsive File FILES -->
         <link rel="stylesheet" href="css/style.css">
@@ -34,7 +43,7 @@
 
     <title>OCTC App Landing page Desinged By imamhossainbd</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example2">
 
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -44,10 +53,10 @@
 	<!-- BODY START -->
   
     <!-- Header Starts-->
-    <header class="header" id="header">
+    <header class="header" >
         <div>
             <!-- Navbar Starts -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar-example2">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="">
@@ -55,9 +64,9 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbar2">
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link active" aria-current="page" href="#header">Home</a>
                   </li>
                   <li class="nav-item">
@@ -84,8 +93,10 @@
 
     </header>
 
+<section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
 
-    <section class="heroSection"> <!-- Hero Section Starts-->
+
+    <section class="heroSection wow bounceInUp" id="header"> <!-- Hero Section Starts-->
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-12">
@@ -98,7 +109,7 @@
             <p class="subtile">Increase productivity with a simple to-do app. app for managing your personal budgets</p>
             <div class="">
               <button class="btn btnStyle">Try for free</button>
-              <button class="btn"><a href="#">Watch Demo Video</a></button>
+              <button class="btn"><a href="https://www.youtube.com/embed/XJZH8Xr_szQ" class="fancybox fancybox.iframe">Watch Demo Video</a></button>
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -110,7 +121,7 @@
       </div>
     </section> <!-- Hero Section end-->
 
-    <section class="company section"> <!-- Company Section Starts-->
+    <section class="company section wow bounceIn"> <!-- Company Section Starts-->
       <div class="container">
         <div class="text-center pb-3">
           <p class="subtile">Trusted by Companies like</p>
@@ -141,10 +152,10 @@
     <section class="features section">  <!-- Features Section Start-->
       <div class="container">
         <div class="row">
-          <div class="col-md-6 div-img col-12">
+          <div class="col-md-6 div-img col-12 wow slideInLeft">
             <img src="img/feature-app-img.png" alt="">
           </div>
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 wow slideInRight">
             <div class="mr-10">
               <div class="text-left">
                 <h2 class="title">Awesome apps </br>features</h2>
@@ -206,8 +217,8 @@
       </div>
     </section>
 
-    <section class="smart section">  <!-- Smart Section Start-->
-      <div class="container text-left smart-top">
+    <section class="smart section ">  <!-- Smart Section Start-->
+      <div class="container text-left smart-top wow fadeInRight">
         <div class="row pt-5 pb-5">
           <div class="col-md-6 col-12">
             
@@ -226,7 +237,7 @@ elevant channels such as Facebook.
 
 
 
-        <div class="row">
+        <div class="row wow fadeInRight">
           <div class="col-md-4 col-12 item-1">
             <div>
 
@@ -277,12 +288,12 @@ news your blood tests.
     <section class="design section">  <!-- Design Section Start-->
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 wow slideInLeft">
             <div >
               <img src="img/2.png" alt="">
             </div>
           </div>
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 wow slideInRight">
             <div class="pr-2">
               <h4 class="title">Designed & built by
                 the latest code
@@ -302,7 +313,7 @@ elevant channels such as Facebook.
     </section>
 
 
-    <section class="whyUs section"> <!-- Why Choose Us Section Start -->
+    <section class="whyUs section wow fadeInUp"> <!-- Why Choose Us Section Start -->
       <div class="container">
         <div class="text-center pb-4">
           <h4 class="title">Why you should choose
@@ -414,7 +425,7 @@ news your blood tests.
     </section> <!-- Why Choose Us Section Start -->
 
 
-    <section class="ultimate" id="ultimate">
+    <section class="ultimate wow fadeInUp" id="ultimate">
       <div class="container">
         <div class="ultimateTop">
           <h3 class="title">Ultimate features</br>
@@ -505,7 +516,7 @@ consume information entirely.
 
 
      <!-- Pricing Section Start -->
-<section class="section pricingList" id="pricingList">
+<section class="section pricingList wow fadeInUp" id="pricingList">
   <div class="container">
 
     <div class="pricing-Top text-center">
@@ -636,7 +647,7 @@ consume information entirely.
 </section>  <!-- Pricing Section End -->
 
 
-<section class="section clientReview" id="clientReview"> <!-- Client Review Section Start -->
+<section class="section clientReview wow fadeInUp" id="clientReview"> <!-- Client Review Section Start -->
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-12 mapClass">
@@ -856,7 +867,7 @@ elevant channels such as Facebook.
 
 
 <!-- FAQ Section Start -->
-<section class="section FAQ" id="FAQ">
+<section class="section FAQ wow fadeInUp" id="FAQ">
   <div class="container">
     <div class="text-center">
       <h4 class="title">Frequently asked questions</h4>
@@ -939,7 +950,7 @@ Bring to the table win-win survival strategies to ensure proactive domination. A
 
 
 <!-- APP Section Start -->
-<section class="section App">
+<section class="section App wow fadeInUp">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-12">
@@ -965,6 +976,8 @@ and the world's most elevant channels such as Facebook.
     </div>
   </div>
 </section> <!-- APP Section End -->
+
+</section>
 
 <!-- Footer Start -->
 <footer class="footer text-center">
@@ -992,7 +1005,11 @@ and the world's most elevant channels such as Facebook.
     </div>
     <p class="copyright">Copyright© IMAM HOSSAIN 2021. All rights reserved</p>
 
+
   </div>
+
+  <!-- Back to top button -->
+<a id="BackTobutton"><i class="fas fa-check-circle"></i></a>
 </footer>
 
 <!-- Footer End -->
@@ -1004,28 +1021,57 @@ and the world's most elevant channels such as Facebook.
 
 
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<!-- Bootstrap Bundle with Popper -->
+<script src="bootstrap/bootstrap.bundle.min.js" ></script>
+        
     
+    
+        <!-- <script src="plugins/jquery-2.2.4.min.js"></script> -->
+        <script src="Plugins/jquery-3.5.1.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+<!-- <script src="plugins/fontawesome.all.js"></script> -->
+    
+      <!--WOW JS Bundle-->
+<script src="Plugins/wow.min.js"></script>
+    <script>
+      wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+     </script>
+
 
     <!--Owl Carousel  -->
-    
-    <!-- <script src="plugins/jquery-2.2.4.min.js"></script> -->
-    <script src="plugins/jquery-3.5.1.min.js"></script>
     <script src="plugins/owl.carousel.min.js"></script>
-
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="bootstrap/bootstrap.bundle.min.js" ></script>
-        <!-- <script src="bootstrap/bootstrap-2.2.4.min.js" ></script> -->
 
     <script src="Plugins/flippricing.js"></script>
 
-  
+    <!--FancyBox for Video Popup  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <script>
+      $("#nav").scrollspy({ offset: -75 });
+    </script> -->
+
+    <script>
+      
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example'
+})
+      </script>
+
+    
     <!-- Custom JS Script File -->
     <script src="js/script.js"></script>
+    
+    
 
 
     
